@@ -1,0 +1,12 @@
+{
+    "name": "rmmz-game",
+    "main": "index.html",
+    "chromium-args": "--force-color-profile=srgb --disable-devtools",
+    "window": {
+        "title": "弹丸论破DRBD",
+        "width": 1296,
+        "height": 720,
+        "position": "center",
+        "icon": "icon/icon.png"
+    }
+}
