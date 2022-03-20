@@ -57,7 +57,7 @@ function GetRandomNum(Min,Max)
 
 
 window.onload = function () {
-    var url = "HTTPS://drbd.rpgca.tk"/*json文件url，本地的就写本地的位置，如果是服务器的就写服务器的路径*/
+    var url = "HTTPS://drbd.rpgca.tk/checkqs.json"/*json文件url，本地的就写本地的位置，如果是服务器的就写服务器的路径*/
     var request = new XMLHttpRequest();
     request.open("get", url);/*设置请求方法与路径*/
     request.send(null);/*不发送数据到服务器*/
