@@ -15,6 +15,7 @@ function getEasyMathQuestion (input_a,input_b,input_method){
 		}
 	};
 	que = que + '=？'
+	return que;
 };
 
 function getEasyMathAnswer (input_a,input_b,input_method){
@@ -30,6 +31,7 @@ function getEasyMathAnswer (input_a,input_b,input_method){
 			ans = input_a * input_b;
 		}
 	};
+	return ans;
 };
 
 function getQuestionFromNet (id){
@@ -77,20 +79,20 @@ window.onload = function () {
 		}else{
 			var check = true;
 			while (check){
-				var num_a = GetRandomNum(0,99);
-				var num_b = GetRandomNum(0,99);
-				var num_function = GetRandomNum(0,3);
+				var num_a = GetRandomNum(0,10);
+				var num_b = GetRandomNum(0,10);
+				var num_function = GetRandomNum(1,3);
 				
 				var math_question = getEasyMathQuestion(num_a,num_b,num_function);
 				var math_answer = getEasyMathAnswer(num_a,num_b,num_function);
 				
 				var get_user_ans = parseInt(window.prompt("请回答一道数学题:" + math_question));
 				console.log("输入的答案:" + math_answer);
-				if (math_question == math_answer) {
+				if (parseInt(math_question) == parseInt(math_answer)) {
 					check = false;
-					console.log("回答正确！网页即将跳转！");
+					window.alert("回答正确！网页即将跳转！");
 				}else{
-					console.log("回答错误！请再来一遍！");
+					window.alert("回答错误！请再来一遍！");
 				}
 			}
 		}
