@@ -81,8 +81,8 @@ window.onload = function () {
 				var num_b = GetRandomNum(0,99);
 				var num_function = GetRandomNum(0,3);
 				
-				math_question = getEasyMathQuestion(num_a,num_b,num_function);
-				math_answer = getEasyMathAnswer(num_a,num_b,num_function);
+				var math_question = getEasyMathQuestion(num_a,num_b,num_function);
+				var math_answer = getEasyMathAnswer(num_a,num_b,num_function);
 				
 				var get_user_ans = parseInt(window.prompt("请回答一道数学题:" + math_question));
 				console.log("输入的答案:" + math_answer);
