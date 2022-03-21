@@ -1,15 +1,17 @@
 
 function getEasyMathQuestion (input_a,input_b,input_method){
 	var que = '';
+	var st_a = String(input_a);
+	var st_b = String(input_b);
 	switch(input_method){
 		case 1 :{
-			que = input_a + '+' + input_b;
+			que = st_a + '+' + st_b;
 		}
 		case 2 :{
-			que = input_a + '-' + input_b;
+			que = st_a + '-' + st_b;
 		}
 		case 3 :{
-			que = input_a + '*' + input_b;
+			que = st_a + '*' + st_b;
 		}
 	};
 	que = que + '=？'
@@ -83,7 +85,7 @@ window.onload = function () {
 				math_answer = getEasyMathAnswer(num_a,num_b,num_function);
 				
 				var get_user_ans = parseInt(window.prompt("请回答一道数学题:" + math_question));
-				console.log("输入的答案:" + li_windowInput);
+				console.log("输入的答案:" + math_answer);
 				if (math_question == math_answer) {
 					check = false;
 					console.log("回答正确！网页即将跳转！");
