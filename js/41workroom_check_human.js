@@ -6,12 +6,15 @@ function getEasyMathQuestion (input_a,input_b,input_method){
 	switch(input_method){
 		case 1 :{
 			que = st_a + '+' + st_b;
+			break;
 		}
 		case 2 :{
 			que = st_a + '-' + st_b;
+			break;
 		}
 		case 3 :{
 			que = st_a + '*' + st_b;
+			break;
 		}
 	};
 	que = que + '=？'
@@ -23,12 +26,15 @@ function getEasyMathAnswer (input_a,input_b,input_method){
 	switch(input_method){
 		case 1 :{
 			ans = input_a + input_b;
+			break;
 		}
 		case 2 :{
 			ans = input_a - input_b;
+			break;
 		}
 		case 3 :{
 			ans = input_a * input_b;
+			break;
 		}
 	};
 	return ans;
