@@ -1,0 +1,31 @@
+
+[
+    {
+        "title": "梦开始的地方",
+        "pictures": ["CG/CG001"],
+        "common_event_id": 101,
+        "switch_id": 101
+    },
+	
+	{
+        "title": "储物室的意外来客",
+        "pictures": ["CG/CG002"],
+        "common_event_id": 102,
+        "switch_id": 102
+    },
+	
+	{
+        "title": "开学第一课",
+        "pictures": ["CG/CG003"],
+        "common_event_id": 103,
+        "switch_id": 103
+    },
+	
+	{
+        "title": "先下手为强？",
+        "pictures": ["CG/CG004"],
+        "common_event_id": 104,
+        "switch_id": 104
+    }
+	
+]
