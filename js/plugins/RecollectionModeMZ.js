@@ -251,7 +251,7 @@ let rngdSetReceivedSwitchObj = new Game_Switches();
 
     DataManager.loadDataFileForRecollectionMode = function(name, src) {
         const xhr = new XMLHttpRequest();
-        const url = "data/plugin" + src;
+        const url = "data/plugin/" + src;
         window[name] = null;
         xhr.open("GET", url);
         xhr.overrideMimeType("application/json");
